@@ -1,0 +1,441 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /*cursor */
+
+
+}
+a{
+    text-decoration: none; /*retira o sublinhado*/
+}
+
+p{
+
+    color: #666;
+    line-height: 140%;
+    margin: 30px 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    margin: 0;
+    font-family: 'playfair display', serif;
+    font-weight: 400;
+    line-height: 100%;
+}
+h2{
+
+    color: #473C38;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+
+/******************Utilitários*************************/
+.text-center{
+
+    text-align: center;
+}
+
+.btn{
+
+    display: inline-block;
+    color: #F0F1F0;
+    background-color: #473C38;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer ;
+}
+
+.btn-block{
+    display: block !important;
+}
+
+.btn-block{
+
+    display: block !important;
+    text-align: center;
+}
+
+.image-shadow{
+        
+    filter: drop-shadow(20px 20px 50px rgb(236, 88, 47));
+}
+
+/******************Utilitários************************/
+
+.hero-section{
+    background-color: #473C38;
+    padding-top: 30px; /*espaçamento do topo no logo*/
+    padding-bottom: 112px;/*espaço interno da perte de baixo*/
+}
+
+.container{
+    /*width: 100%;*/
+    padding: 15px;
+    max-width: 1120px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu a{
+    color: #ffff;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;/*Retira o subliado dos links*/
+    margin-left: 70px;
+}
+
+.menu a:hover{
+color:#FFE5B6;
+
+}
+
+.flex-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 112px;
+ 
+}
+
+.content-hero{
+    width: 643px;
+}
+
+/*altera a formatação do butão*/
+.content-hero a{
+
+     color: #473C38;
+     background-color: #C2B19C;
+     font-family: 'Playfair Display', serif;
+     padding: 15px 50px;
+     display: inline-block;/*usar sempre em botão*/
+     margin-top: 10px;
+   
+
+
+}
+.content-hero h1{
+
+    color: #ffff;
+    font-size: 60px;
+    
+}
+
+.content-hero p{
+
+    width: 450px;
+    color: #ffff;
+    line-height: 140%;
+}
+
+.content-hero a:hover{
+       background-color: #b2935b;
+}
+
+
+
+.presentation{
+
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content-presentation{
+    width: 643px;
+    
+
+}
+
+
+.cards-section{
+
+    background-color:#F0F1F0;
+    padding: 50px 0;
+
+   
+
+
+}
+.cards-section .cards-flex{
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card{
+
+    width: 356px;
+    background-color: #ffffff;
+    padding: 38px;
+    box-sizing: border-box; /* Faz com que o padding e a borda não interfira nas dimensões*/
+    border-radius: 5px;
+    box-shadow:5px 5px 10px rgba(7, 7, 7, 0.25)
+    
+}
+.card:hover{
+
+    box-shadow: 5px 5px 20px rgba(68, 73, 222, 0.58);
+
+}
+
+.card h3{
+color:#473C38;
+font-size: 24px;
+margin-top: 20px;
+
+}
+
+.comment{
+    
+    padding: 50px 0;
+    text-align: center;
+
+    
+}
+.txt-commet{
+
+    color: #473C38;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin: 20px 0;
+}
+.news{
+
+    background-color: #C2B19C;
+    padding: 50px 0;
+}
+.news form{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.news .btn{
+height: 32px;
+
+}
+
+.form-group label{
+
+    display: block;
+    color: #473C38;
+}
+
+.form-group input{
+width: 450px;
+height: 30px;
+border: none;
+}
+
+.footer{
+
+    background-color: #473C38;
+    padding: 50px 0;
+    
+}
+.footer .container{
+
+display: flex;
+justify-content: space-around;
+
+
+}
+
+.card-footer{
+
+    width: 356px;
+}
+.card-footer h4{
+    color: white;
+    font-size: 24px
+}
+
+.card-footer p{
+color: white;
+margin-bottom: 0;
+
+}
+
+@media (max-width: 1150px) {
+
+.h2{
+
+        font-size: 28px;
+        margin-bottom:40px;
+    }
+
+.logo img{
+
+        height: 70px;
+    }
+
+.menu{
+
+    /*display: none;*/
+   
+    width: 100%;
+    height: calc(100% - 132px);
+    background-color: #B2935B;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    z-index: 1000;;
+    padding: 15px;
+    box-sizing: border-box;
+
+    transform: translateX(-100%) !important;
+    transition: 0.5s;
+}
+
+.menu-open{
+
+   /*display: block;*/
+   transform: translateX(0) !important;
+
+}
+
+.menu a{
+    color: #473C38;
+    display: block;
+    margin: 0;
+    
+    /*border-bottom-color: #b2935b;
+    border-bottom-style: solid;
+    border-bottom-width: 1px; */
+
+    border-bottom:solid 1px #473c38;
+    padding: 15px 0;
+
+}
+.bar{
+
+    width: 40px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    transition: 0.5s;
+
+
+}
+
+.x .bar:nth-child(2){ /*barra do meio*/
+
+    opacity: 0;
+    transform: translateX(-100px);
+
+}
+.x .bar:first-child{/*segunda barra*/
+
+    transform: rotate(45deg)  translate(5px,0);
+    transition-delay: 0.5s;
+
+}
+.x .bar:last-child{/*terceira barra*/
+
+    transform: rotate(-45deg) translate(8px,-3px);
+    transition-delay: 0.1s;
+
+}
+
+.flex-hero{
+
+    flex-direction: column;
+
+    }
+
+ .content-hero{
+
+    width: 100%;
+    text-align: center;
+ }   
+
+.content-hero h1{
+
+    font-size: 32px;
+
+}  
+.content-hero p{
+
+    width: 100%;
+}  
+
+.image-hero{
+
+    margin-top:52px;
+}
+
+.image-hero img{
+
+    max-width: 264px;
+}
+
+.image-presentation{
+
+    display: none;
+}
+.presentation{
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.content-presentation{
+
+    width:100%;
+    /*text-align: justify;  justificar texto, texto uniforme */ 
+}
+.cards-flex{
+
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;/*vão entre as linhas*/
+}
+.txt-commet{
+    
+   font-size: 24px;
+
+}
+
+.news form{
+
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    
+}
+.news input{
+
+    width: 100%;
+}
+.form-group{
+
+    width: 100%;
+
+}
+
+.footer .container{ 
+
+    flex-direction: column;
+    row-gap: 50px;
+}
+.card-footer{
+
+    width: 100%;
+}
+     
+}
